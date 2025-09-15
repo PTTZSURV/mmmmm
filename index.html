@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MobiEarn</title>
-
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <style>
+    /* Existing styles remain unchanged */
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f8f9fa; }
     .hero { 
       background: linear-gradient(135deg, #0d6efd, #6610f2); 
@@ -152,7 +150,6 @@
   </style>
 </head>
 <body>
-
   <!-- Hero -->
   <div class="hero" data-aos="fade-down">
     <h1>MobiEarn</h1>
@@ -179,7 +176,7 @@
   <!-- Notification -->
   <div class="notification" id="notificationBox">
     <img src="https://placehold.co/40x40/000000/000000/svg?text=%E2%99%80" alt="User">
-    <span id="notificationText">Mercy Wambui just withdrew KSh 2000 via M-Pesa to ***456!</span>
+    <span id="notificationText">Mercy Wambui just withdrew KSh 2000 via M-Pesa to +254710***097!</span>
   </div>
 
   <!-- How It Works -->
@@ -243,7 +240,7 @@
         <div class="carousel-item active">
           <div class="review-card">
             <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%80" alt="Female User">
-            <p>"MobiEarn has been a game-changer! I withdrew KSh 2,000 to ***123 in my first week."</p>
+            <p>"MobiEarn has been a game-changer! I withdrew KSh 2,000 to +254710***123 in my first week."</p>
             <p class="author">— Mercy Wambui</p>
           </div>
         </div>
@@ -271,7 +268,7 @@
         <div class="carousel-item">
           <div class="review-card">
             <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%82" alt="Male User">
-            <p>"Surveys are fun and pay well. Got my payout to ***456 instantly."</p>
+            <p>"Surveys are fun and pay well. Got my payout to +254790***456 instantly."</p>
             <p class="author">— John Mwangi</p>
           </div>
         </div>
@@ -328,6 +325,29 @@
       }
     });
 
+    // List of Safaricom Kenya mobile prefixes
+    const mobilePrefixes = [
+      '700', '701', '702', '703', '704', '705', '706', '707', '708', '709', // 70X
+      '710', '711', '712', '713', '714', '715', '716', '717', '718', '719', // 71X
+      '720', '721', '722', '723', '724', '725', '726', '727', '728', '729', // 72X
+      '740', '741', '742', '743', '744', '745', '746', '747', '748', '749', // 74X
+      '750', '751', '752', '753', '754', '755', '756', '757', '758', '759', // 75X
+      '760', '761', '762', '763', '764', '765', '766', '767', '768', '769', // 76X
+      '790', '791', '792', '793', '794', '795', '796', '797', '798', '799', // 79X
+      '110', '111', '112' // Newer prefixes
+    ];
+
+    // Function to generate a random Safaricom mobile prefix
+    function generateMobilePrefix() {
+      return mobilePrefixes[Math.floor(Math.random() * mobilePrefixes.length)];
+    }
+
+    // Function to generate a random 6-digit subscriber number and return last 3 digits
+    function generatePhoneEnding() {
+      const subscriberNumber = Math.floor(100000 + Math.random() * 900000); // Random 6-digit number
+      return subscriberNumber.toString().slice(-3); // Return last 3 digits
+    }
+
     // Fake Notification with withdrawal-only and minimum KSh 2000
     const notificationBox = document.getElementById('notificationBox');
     const users = [
@@ -341,17 +361,17 @@
       {name:"Catherine Njeri", gender:"female"}
     ];
     const amounts = [2000, 2500, 3000, 3500, 4000, 5000];
-    const phoneEndings = ['123', '456', '789', '234', '567', '890', '345', '678'];
 
     function showNotification() {
       const user = users[Math.floor(Math.random() * users.length)];
       const amount = amounts[Math.floor(Math.random() * amounts.length)];
-      const phoneEnding = phoneEndings[Math.floor(Math.random() * phoneEndings.length)];
+      const prefix = generateMobilePrefix();
+      const phoneEnding = generatePhoneEnding();
       const avatar = user.gender === "female"
         ? "https://placehold.co/40x40/000000/000000/svg?text=%E2%99%80"
         : "https://placehold.co/40x40/000000/000000/svg?text=%E2%99%82";
 
-      notificationBox.innerHTML = `<img src="${avatar}" alt="${user.gender}"> <span>${user.name} just withdrew KSh ${amount} via M-Pesa to ***${phoneEnding}!</span>`;
+      notificationBox.innerHTML = `<img src="${avatar}" alt="${user.gender}"> <span>${user.name} just withdrew KSh ${amount} via M-Pesa to +254${prefix}***${phoneEnding}!</span>`;
       notificationBox.classList.add('show');
       setTimeout(() => {
         notificationBox.classList.remove('show');
