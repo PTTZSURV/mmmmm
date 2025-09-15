@@ -1,480 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <title>Surveyiss - Earn Money with Surveys in Kenya</title>
-    <meta name="description" content="Earn up to Ksh 3,000 daily with Surveyiss by completing surveys in Kenya. Download the app or get started online and cash out instantly via M-Pesa.">
-    <meta name="keywords" content="Surveyiss, earn money Kenya, online surveys, M-Pesa, make money online, paid surveys, Kenya jobs">
-    <meta name="author" content="Surveyiss">
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph Tags for Social Media -->
-    <meta property="og:title" content="Surveyiss - Earn Money with Surveys in Kenya">
-    <meta property="og:description" content="Join thousands of Kenyans earning up to Ksh 3,000 daily with Surveyiss. Complete surveys and cash out instantly via M-Pesa.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://surveyiss.com">
-    <meta property="og:type" content="website">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" type="image/png" href="/favicon-180x180.png" sizes="180x180">
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Custom CSS -->
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17395347891"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17395347891'); </script>
-<!-- Event snippet for Page view conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-17395347891/EsoLCI68sfgaELPj3-ZA', 'value': 1.0, 'currency': 'USD' }); </script>
-    <style>
-        body {
-            text-align: center;
-            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-            min-height: 100vh;
-            color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .hero {
-            min-height: 60vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            padding: 2rem;
-            background: rgba(33, 37, 41, 0.7);
-            backdrop-filter: blur(8px);
-        }
-        .welcome-text {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(90deg, #ff8a00, #e52e71);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        .tagline {
-            font-size: 1.2rem;
-            opacity: 0.8;
-            margin-bottom: 1rem;
-            max-width: 600px;
-            line-height: 1.6;
-            color: #f8f9fa;
-        }
-        .app-logo {
-            height: 30vmin;
-            pointer-events: none;
-            margin-bottom: 2rem;
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
-        }
-        @media (prefers-reduced-motion: no-preference) {
-            .app-logo {
-                animation: App-logo-float infinite 3s ease-in-out;
-            }
-        }
-        @keyframes App-logo-float {
-            0% {
-                transform: translateY(0) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-10px) rotate(5deg);
-            }
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
-        }
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .cta-button {
-            background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(229, 46, 113, 0.4);
-        }
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(229, 46, 113, 0.6);
-        }
-        .google-play-btn {
-            transition: all 0.3s ease;
-        }
-        .google-play-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(229, 46, 113, 0.3);
-        }
-        .section {
-            padding: 50px 0;
-            background: rgba(255, 255, 255, 0.1);
-        }
-        .stats-section {
-            background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
-            color: white;
-        }
-        .stats-card {
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            transition: transform 0.3s;
-            color: white;
-        }
-        .stats-card:hover {
-            transform: translateY(-5px);
-        }
-        .stats-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .stats-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .card {
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #e6f4ea 0%, #f1f8ff 100%);
-            border-radius: 10px;
-            transition: transform 0.3s;
-            color: #343a40;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .review-card {
-            background: linear-gradient(135deg, #e6f4ea 0%, #f1f8ff 100%);
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            color: #343a40;
-        }
-        .review-card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        .review-card .stars {
-            color: #ffd700;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        .ticker {
-            background: linear-gradient(90deg, #343a40 0%, #495057 100%);
-            color: white;
-            overflow: hidden;
-            white-space: nowrap;
-            padding: 12px 0;
-        }
-        .ticker-wrapper {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .ticker-content {
-            display: inline-block;
-            animation: ticker 30s linear infinite;
-        }
-        @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-        .ticker-item {
-            display: inline-block;
-            padding-right: 2em;
-            font-size: 1rem;
-            color: #ffd700;
-        }
-        .faq .accordion-button {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #f8f9fa;
-            font-weight: bold;
-        }
-        .faq .accordion-button:focus {
-            box-shadow: none;
-        }
-        .faq .accordion-item {
-            border-radius: 10px;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #e6f4ea 0%, #f1f8ff 100%);
-            color: #343a40;
-        }
-        .faq .accordion-button span, .faq .accordion-body span {
-            color: #000000; /* Black font color for FAQ questions and answers */
-            font-family: 'Arial', sans-serif; /* Arial font style for FAQ questions and answers */
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .welcome-text {
-                font-size: 2rem;
-            }
-            .tagline {
-                font-size: 1rem;
-                padding: 0 1rem;
-            }
-            .app-logo {
-                height: 40vmin;
-            }
-            .cta-button {
-                font-size: 1rem;
-                padding: 10px 20px;
-                margin-bottom: 15px;
-            }
-            .google-play-btn img {
-                width: 150px;
-            }
-            .review-card img {
-                width: 60px;
-                height: 60px;
-            }
-            .stats-icon {
-                font-size: 2rem;
-            }
-            .stats-number {
-                font-size: 2rem;
-            }
-        }
-        .arrow-down {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #f8f9fa;
-            animation: bounce 1s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MobiEarn</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f8f9fa; }
+    .hero { 
+      background: linear-gradient(135deg, #0d6efd, #6610f2); 
+      color: white; 
+      text-align: center; 
+      padding: 100px 20px; 
+      position: relative; 
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      pointer-events: none;
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero h1 { 
+      font-size: 3.5rem; 
+      font-weight: bold; 
+      margin-bottom: 10px; 
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero .lead { font-size: 1.3rem; margin-bottom: 20px; }
+    .hero img { 
+      max-width: 120px; 
+      height: auto; 
+      margin: 20px auto; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .hero h3 { 
+      font-size: 2rem; 
+      margin-bottom: 20px; 
+      color: #fff;
+    }
+    .hero ul { 
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0 auto 30px; 
+      max-width: 500px; 
+      text-align: left; 
+    }
+    .hero ul li { 
+      position: relative; 
+      padding-left: 40px; 
+      margin-bottom: 15px; 
+      font-size: 1.2rem; 
+      background: rgba(255,255,255,0.1); 
+      padding: 12px 15px 12px 40px; 
+      border-radius: 8px; 
+      border-left: 4px solid #28a745;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hero ul li:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .hero ul li::before { 
+      content: "✔"; 
+      position: absolute; 
+      left: 15px; 
+      top: 50%; 
+      transform: translateY(-50%);
+      color: #28a745; 
+      font-weight: bold; 
+      font-size: 1.2rem;
+    }
+    .hero .btn-container { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 20px; 
+      flex-wrap: wrap;
+    }
+    .hero .btn-container .btn-primary { 
+      height: 60px; 
+      line-height: 60px; 
+      padding: 0 30px; 
+      font-size: 1.2rem; 
+      border-radius: 30px; 
+      background: #28a745 !important;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .hero .btn-container .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+    }
+    .card { border-radius:1rem; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
+    .notification {
+      position: fixed; bottom: 20px; left: 20px;
+      background: white; padding: 12px 16px; border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: flex; align-items: center; gap: 10px;
+      opacity: 0; transform: translateY(20px);
+      transition: all .5s ease; z-index: 2000;
+    }
+    .notification.show { opacity: 1; transform: translateY(0); }
+    .notification img { width:40px; height:40px; border-radius:50%; }
+    /* Stats */
+    .stat { text-align: center; padding: 20px; }
+    .stat h3 { font-size: 2.5rem; font-weight: bold; color: #0d6efd; }
+    /* Reviews Carousel */
+    .carousel-item { text-align: center; }
+    .review-card {
+      max-width: 600px; margin: auto; background: white; padding: 30px;
+      border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .review-card img { border-radius: 50%; margin-bottom: 15px; }
+    .author { font-weight: bold; margin-top: 10px; }
+    footer { background:#212529; color:white; padding:20px; }
+    @media (max-width: 768px) {
+      .hero { padding: 60px 20px; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero h3 { font-size: 1.5rem; }
+      .hero .lead { font-size: 1.1rem; }
+      .hero ul li { 
+        font-size: 1rem; 
+        padding: 10px 15px 10px 35px; 
+      }
+      .hero ul li::before { 
+        left: 10px; 
+        font-size: 1rem; 
+      }
+      .hero .btn-container { gap: 10px; }
+      .notification { 
+        bottom: 15px; 
+        left: 15px; 
+        padding: 10px 14px; 
+        font-size: 0.9rem; 
+      }
+      .notification img { width: 32px; height: 32px; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <img src="https://play-lh.googleusercontent.com/-b8fPXvOU39WU1gQJk0J48I7ScQaR9Zn_gxYFLKYF9D86mQ8Oc8c7k3OvKI04KwEI7jp=w480-h960-rw" class="app-logo" alt="Surveyiss Logo">
-            <h1 class="welcome-text">Earn Money by Sharing Your Opinions</h1>
-            <p class="tagline">Join the Surveyiss panel<br>and earn up to Ksh 23,250 /month?<br>It is possible!<br>How much would you like to earn?</p>
-            <div class="arrow-down">↓</div>
-            <div class="cta-buttons">
-                <a href="https://panel.surveyiss.com/home" class="cta-button">Up to Ksh 6,200</a>
-                <a href="https://panel.surveyiss.com/home" class="cta-button">Up to Ksh 23,250</a>
-                <a href="https://panel.surveyiss.com/home" class="cta-button">Ksh 23,250 and More</a>
-<!--                 <a href="https://play.google.com/store/apps/details?id=com.earn.surveys.surveyiss" class="google-play-btn">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="width: 180px;">
-                </a> -->
-            </div>
-        </div>
-    </section>
 
-    <!-- Scrolling Ticker Section -->
-    <section class="ticker">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="ticker-wrapper">
-                        <div class="ticker-content">
-                            <span class="ticker-item">John from Nairobi earned Ksh 3,000 this week</span>
-                            <span class="ticker-item">Mary from Mombasa earned Ksh 2,500 yesterday</span>
-                            <span class="ticker-item">David from Kisumu earned Ksh 4,000 last month</span>
-                            <span class="ticker-item">Sarah from Eldoret earned Ksh 2,800 this week</span>
-                            <span class="ticker-item">Michael from Nakuru earned Ksh 3,500 last month</span>
-                            <!-- Duplicated for continuous scrolling -->
-                            <span class="ticker-item">John from Nairobi earned Ksh 3,000 this week</span>
-                            <span class="ticker-item">Mary from Mombasa earned Ksh 2,500 yesterday</span>
-                            <span class="ticker-item">David from Kisumu earned Ksh 4,000 last month</span>
-                            <span class="ticker-item">Sarah from Eldoret earned Ksh 2,800 this week</span>
-                            <span class="ticker-item">Michael from Nakuru earned Ksh 3,500 last month</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero -->
+  <div class="hero" data-aos="fade-down">
+    <h1>MobiEarn</h1>
+    <p class="lead">Trusted by 10,000+ users to earn rewards instantly with M-Pesa</p>
+    <img src="https://play-lh.googleusercontent.com/jSD2RKSHi1QsbJwlTDM-ebsaD9JvSnfMl-34tvOcVLCebKJRfM6B4YBJMy3_HjEEZKGsH0RyrNn301dL30LHUA=w480-h960-rw" alt="MobiEarn Logo">
+    <h3 class="mb-3">Start Earning Now!</h3>
+    <ul class="lead">
+      <li>Join MobiEarn for free and easy</li>
+      <li>Earn up to Ksh 300 per survey</li>
+      <li>Turn your valuable opinions into cash</li>
+      <li>Quick payouts via M-Pesa</li>
+      <li>Trusted by 10,000+ users</li>
+      <li>Earn and have fun while making up to Ksh 100k+ per month</li>
+    </ul>
+    <div class="btn-container">
+      <a href="https://play.google.com/store/apps/details?id=com.earn.surveys.MobiEarn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+             alt="Download on Google Play" style="height:60px;">
+      </a>
+      <a href="https://panel.surveyearn.co.ke/" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
 
-    <!-- Stats Section -->
-    <section class="section stats-section">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Stats</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="stats-card text-center p-4">
-                        <i class="bi bi-clipboard-data stats-icon"></i>
-                        <h5>Surveys Launched</h5>
-                        <p class="stats-number">5,000</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="stats-card text-center p-4">
-                        <i class="bi bi-people stats-icon"></i>
-                        <h5>Registered Users</h5>
-                        <p class="stats-number">100,000</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Notification -->
+  <div class="notification" id="notificationBox">
+    <img src="https://placehold.co/40x40/000000/000000/svg?text=%E2%99%80" alt="User">
+    <span id="notificationText">Mercy Wambui just withdrew KSh 2000 via M-Pesa to ***456!</span>
+  </div>
 
-    <!-- How It Works Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-4">How It Works</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card text-center p-3">
-                        <h5>1. Sign Up</h5>
-                        <p>Join for free in under 2 minutes.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center p-3">
-                        <h5>2. Complete Profile</h5>
-                        <p>Fill out your profile to unlock surveys.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center p-3">
-                        <h5>3. Take Surveys</h5>
-                        <p>Earn points by sharing your opinions.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-center p-3">
-                        <h5>4. Cash Out</h5>
-                        <p>Withdraw instantly via M-Pesa with no minimum threshold.</p>
-                    </div>
-                </div>
-            </div>
+  <!-- How It Works -->
+  <div class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">How It Works</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <h4>1. Sign Up</h4>
+          <p>Join for free in under 2 minutes.</p>
         </div>
-    </section>
-
-    <!-- Earnings Potential Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-4">Earnings Potential</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center p-3">
-                        <h5>Earn Ksh 500-3,000 Daily</h5>
-                        <p>Complete surveys and earn rewards from anywhere.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center p-3">
-                        <h5>Per Survey: Ksh 50-500</h5>
-                        <p>Each survey pays based on length and complexity.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center p-3">
-                        <h5>Success Stories</h5>
-                        <p>Michael from Nairobi earns Ksh 25,000 monthly, Susan from Nakuru earns Ksh 2,500 daily, David from Mombasa withdrew Ksh 80,000 in 3 months.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <h4>2. Complete Profile</h4>
+          <p>Fill out your profile to unlock surveys.</p>
         </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-4">What Our Users Say</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="review-card">
-                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80" alt="Jane">
-                        <h5>Jane from Nairobi</h5>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Surveyiss is amazing! I earn Ksh 2,000 weekly from short surveys, and M-Pesa payouts are instant!"</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review-card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80" alt="Peter">
-                        <h5>Peter from Mombasa</h5>
-                        <div class="stars">⭐⭐⭐⭐</div>
-                        <p>"Easy to use and great rewards. I made Ksh 3,500 last month just in my free time!"</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review-card">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80" alt="Grace">
-                        <h5>Grace from Kisumu</h5>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p>"The best survey app in Kenya! I've earned Ksh 4,000 this month, highly recommend!"</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <h4>3. Take Surveys</h4>
+          <p>Earn points by sharing your opinions.</p>
         </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section faq">
-        <div class="container">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq1">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                            <span style="color:#000000">Is it free to join Surveyiss?</span>
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            <span style="color:#000000">Yes, joining Surveyiss is completely free with no hidden fees.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            <span style="color:#000000">How do I get paid?</span>
-                        </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            <span style="color:#000000">You can cash out instantly via M-Pesa, PayPal, or gift cards with no minimum threshold.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                            <span style="color:#000000">Are there any hidden fees?</span>
-                        </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            <span style="color:#000000">No, Surveyiss has no hidden fees. You keep what you earn.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 text-center">
+          <h4>4. Cash Out</h4>
+          <p>Withdraw instantly via M-Pesa with no minimum threshold.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
-    <script>
-        // Placeholder for future JavaScript functionality
-    </script>
+  <!-- Stats -->
+  <div class="container my-5" data-aos="zoom-in">
+    <div class="row text-center">
+      <div class="col-md-3 stat">
+        <h3 class="counter" data-target="50000">0</h3>
+        <p>Active Users</p>
+      </div>
+      <div class="col-md-3 stat">
+        <h3 class="counter" data-target="1200000">0</h3>
+        <p>Surveys Completed</p>
+      </div>
+      <div class="col-md-3 stat">
+        <h3 class="counter" data-target="7500000">0</h3>
+        <p>KSh Paid Out</p>
+      </div>
+      <div class="col-md-3 stat">
+        <h3 class="counter" data-target="99">0</h3>
+        <p>% Satisfaction</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews -->
+  <section class="my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">What Our Users Say</h2>
+    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="review-card">
+            <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%80" alt="Female User">
+            <p>"MobiEarn has been a game-changer! I withdrew KSh 2,000 to ***123 in my first week."</p>
+            <p class="author">— Mercy Wambui</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%82" alt="Male User">
+            <p>"The app is so easy to use, and I love the quick M-Pesa withdrawals!"</p>
+            <p class="author">— Joseph Omondi</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%80" alt="Female User">
+            <p>"Perfect for students like me. I make extra cash in my free time."</p>
+            <p class="author">— Fatuma Achieng</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%82" alt="Male User">
+            <p>"I've withdrawn over KSh 5,000 already. Highly recommend!"</p>
+            <p class="author">— Peter Kariuki</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <img src="https://placehold.co/60x60/000000/000000/svg?text=%E2%99%82" alt="Male User">
+            <p>"Surveys are fun and pay well. Got my payout to ***456 instantly."</p>
+            <p class="author">— John Mwangi</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 MobiEarn. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Init AOS
+    AOS.init({ duration: 1000, once: true });
+
+    // Animated Counters
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const update = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / speed);
+          if(count < target) {
+            counter.innerText = count + increment;
+            setTimeout(update, 20);
+          } else {
+            counter.innerText = target.toLocaleString();
+          }
+        };
+        update();
+      });
+    };
+
+    // Trigger counters on scroll
+    let triggered = false;
+    window.addEventListener('scroll', () => {
+      const stats = document.querySelector('.stat');
+      const rect = stats.getBoundingClientRect().top;
+      if(!triggered && rect < window.innerHeight) {
+        animateCounters();
+        triggered = true;
+      }
+    });
+
+    // Fake Notification with withdrawal-only and minimum KSh 2000
+    const notificationBox = document.getElementById('notificationBox');
+    const users = [
+      {name:"Mercy Wambui", gender:"female"},
+      {name:"Joseph Omondi", gender:"male"},
+      {name:"Fatuma Achieng", gender:"female"},
+      {name:"Peter Kariuki", gender:"male"},
+      {name:"John Mwangi", gender:"male"},
+      {name:"Jane Akinyi", gender:"female"},
+      {name:"Brian Otieno", gender:"male"},
+      {name:"Catherine Njeri", gender:"female"}
+    ];
+    const amounts = [2000, 2500, 3000, 3500, 4000, 5000];
+    const phoneEndings = ['123', '456', '789', '234', '567', '890', '345', '678'];
+
+    function showNotification() {
+      const user = users[Math.floor(Math.random() * users.length)];
+      const amount = amounts[Math.floor(Math.random() * amounts.length)];
+      const phoneEnding = phoneEndings[Math.floor(Math.random() * phoneEndings.length)];
+      const avatar = user.gender === "female"
+        ? "https://placehold.co/40x40/000000/000000/svg?text=%E2%99%80"
+        : "https://placehold.co/40x40/000000/000000/svg?text=%E2%99%82";
+
+      notificationBox.innerHTML = `<img src="${avatar}" alt="${user.gender}"> <span>${user.name} just withdrew KSh ${amount} via M-Pesa to ***${phoneEnding}!</span>`;
+      notificationBox.classList.add('show');
+      setTimeout(() => {
+        notificationBox.classList.remove('show');
+      }, 3000);
+      setTimeout(showNotification, 4000);
+    }
+
+    // Start notifications after page load
+    showNotification();
+  </script>
 </body>
 </html>
-
